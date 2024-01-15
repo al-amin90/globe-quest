@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ff5400;
+  --content-color: #5a5a5d;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* common style is here  */
+.primary-color {
+  color: var(--main-color);
+}
+
+.primary-btn {
+  padding: 1.6rem 3rem;
+  color: white;
+  /* width: 25%; */
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--main-color);
+
+  & .fa-solid {
+    margin-right: 0.8rem;
+  }
+}
+
+.common-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* nav style is here  */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.5rem 0 2.5rem;
+}
+
+.nav-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-logo h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.nav-content ul,
+.nav-mobile-content ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-content ul a,
+.nav-mobile-content ul a {
+  text-decoration: none;
+  color: #424247;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.nav-mobile-content {
+  display: none;
+}
+
+/* banner style is here  */
+.banner-container {
+  height: 47rem;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/Group\ 13.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.banner-info h1 {
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+}
+
+.banner-info p {
+  max-width: 65rem;
+  color: white;
+  padding: 2.4rem 0 4.5rem;
+  margin: 0 auto;
+}
+
+.banner-info-filed {
+  display: flex;
+  gap: 2.4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 1.6rem;
+}
+
+input,
+select {
+  width: 17rem;
+  padding: 1.6rem;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1.3rem;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+}
+
+/* responsive media quarry style is here  */
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .nav-content {
+    display: none;
+  }
+  .nav-mobile-content {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .banner-container {
+    background-position: center;
+    padding: 2rem;
+  }
+
+  .banner-info h1 {
+    font-size: 5rem;
+  }
+
+  input,
+  select {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-logo img {
+    width: 90%;
+  }
+
+  .nav-logo h2 {
+    font-size: 2.2rem;
+  }
+
+  .banner-info h1 {
+    font-size: 3rem;
+  }
+
+  .banner-info-filed {
+    flex-direction: column;
+  }
+
+  .banner-container {
+    height: auto;
+    background-position: center;
+    padding: 2rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+}
