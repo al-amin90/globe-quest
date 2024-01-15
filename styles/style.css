@@ -24,6 +24,10 @@ html {
 }
 
 /* common style is here  */
+main section {
+  margin-bottom: 10rem;
+}
+
 .primary-color {
   color: var(--main-color);
 }
@@ -41,6 +45,13 @@ html {
   & .fa-solid {
     margin-right: 0.8rem;
   }
+}
+
+.common-heading {
+  color: #131318;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .common-description {
@@ -139,8 +150,42 @@ select {
   outline: 0;
 }
 
+/* our popular tour style is here  */
+.tours-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.tour-info {
+  flex: 1;
+}
+
+.tour-info p,
+.tour-info ul {
+  color: #5a5a5d;
+  line-height: 2.6rem;
+}
+
+.tour-info p {
+  margin: 2.4rem 0;
+}
+
+.tour-info ul {
+  padding-left: 2rem;
+}
+
+.tour-img {
+  text-align: right;
+  flex: 1;
+}
+
+.tour-img img {
+  width: 90%;
+}
+
 /* responsive media quarry style is here  */
 
+/* medium device media quarry style is here  */
 @media screen and (max-width: 992px) {
   html {
     font-size: 56.25%;
@@ -171,8 +216,17 @@ select {
   select {
     width: 15rem;
   }
+
+  .tour-img img {
+    width: 100%;
+  }
+
+  .tours-container {
+    flex-direction: column;
+  }
 }
 
+/* phone device media quarry style is here  */
 @media screen and (max-width: 600px) {
   .nav-logo img {
     width: 90%;
