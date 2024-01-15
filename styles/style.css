@@ -35,7 +35,6 @@ main section {
 .primary-btn {
   padding: 1.6rem 3rem;
   color: white;
-  /* width: 25%; */
   border: 0;
   border-radius: 8px;
   font-size: 1.3rem;
@@ -54,9 +53,15 @@ main section {
   font-weight: 800;
 }
 
+.common-heading-second {
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 .common-description {
   color: rgba(19, 19, 24, 0.7);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
 }
@@ -184,9 +189,12 @@ select {
 }
 
 /* your Destination style is here  */
-.destination-info p {
+.destination-info p,
+.why-choose-us p {
   text-align: center;
-  margin: 2rem 4rem;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
 }
 
 .destination-img h3 {
@@ -303,6 +311,46 @@ select {
   background-repeat: no-repeat;
 }
 
+/* why-choose-us style is here  */
+
+.card-col-1 {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 2.8rem;
+  border-radius: 16px;
+}
+
+.card h4 {
+  margin: 2.8rem 0 1.3rem;
+}
+
+.card img {
+  width: 10%;
+}
+
+.card-1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background-color: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
 /* responsive media quarry style is here  */
 
 /* medium device media quarry style is here  */
@@ -346,8 +394,22 @@ select {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .card-col-1 {
+    flex-direction: column;
+  }
+
+  .card-3 {
+    width: 100%;
+  }
+}
+
 /* phone device media quarry style is here  */
 @media screen and (max-width: 600px) {
+  main section {
+    margin-bottom: 5rem;
+  }
+
   .nav-logo img {
     width: 90%;
   }
@@ -387,5 +449,9 @@ select {
   .Kashmir,
   .Bangladesh {
     grid-column: 1/ 13;
+  }
+
+  .card img {
+    width: 15%;
   }
 }
