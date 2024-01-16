@@ -312,6 +312,10 @@ select {
 }
 
 /* why-choose-us style is here  */
+.cards p,
+.newsletter-info p {
+  color: #5a5a5d;
+}
 
 .card-col-1 {
   margin-top: 2rem;
@@ -351,6 +355,75 @@ select {
   background: rgba(233, 68, 68, 0.05);
 }
 
+/* newsletter style is here  */
+.newsletter-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.newsletter-info {
+  padding: 3.5rem;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+
+.newsletter-info p {
+  max-width: 30rem;
+  margin-top: 1.8rem;
+}
+
+.newsletter-info hr {
+  margin: 3rem 0;
+  border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+form input {
+  display: block;
+  color: rgba(19, 19, 24, 0.3);
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  padding: 1.3rem 1.7rem;
+  margin-bottom: 1.8rem;
+}
+
+form button {
+  width: 100%;
+}
+
+.newsletter-img {
+  position: relative;
+}
+
+.newsletter-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-sale {
+  text-align: center;
+  padding: 3rem 3.8rem;
+  background-color: var(--main-color);
+  border-radius: 16px;
+  position: absolute;
+  right: 2%;
+  transform: rotate(-25deg);
+  bottom: 15%;
+  /* width: 45%; */
+}
+
+.newsletter-sale h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.newsletter-sale h2 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
 /* responsive media quarry style is here  */
 
 /* medium device media quarry style is here  */
@@ -380,8 +453,8 @@ select {
     font-size: 5rem;
   }
 
-  input,
-  select {
+  .banner-info-filed input,
+  .banner-info-filed select {
     width: 15rem;
   }
 
@@ -401,6 +474,10 @@ select {
 
   .card-3 {
     width: 100%;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
   }
 }
 
@@ -453,5 +530,28 @@ select {
 
   .card img {
     width: 15%;
+  }
+
+  .newsletter-sale h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-sale h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .newsletter-sale {
+    padding: 2rem 2.5rem;
+    bottom: 18%;
+  }
+
+  .newsletter-sale h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-sale h3 {
+    font-size: 1.7rem;
   }
 }
