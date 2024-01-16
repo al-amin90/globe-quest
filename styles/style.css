@@ -415,7 +415,15 @@ select {
 }
 
 /* deals-discounts style is here  */
-.deal-dis-1,
+.deal-dis-1 {
+  height: 47rem;
+  width: 100%;
+  background-image: url(../Images/Group\ 39.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
 .deal-dis-2 {
   height: 47rem;
   width: 100%;
