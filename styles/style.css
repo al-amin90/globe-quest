@@ -413,11 +413,24 @@ select {
   margin-top: 1.5rem;
 }
 
+/* place to get lost style is here  */
+.place-to-get-lost {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.tour-video video {
+  width: 100%;
+  border-radius: 16px;
+}
+
 /* newsletter style is here  */
 .newsletter-container {
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .newsletter-info {
