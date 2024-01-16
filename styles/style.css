@@ -61,7 +61,7 @@ main section {
 
 .common-description {
   color: rgba(19, 19, 24, 0.7);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
 }
@@ -379,6 +379,16 @@ select {
   color: white;
 }
 
+.place-card {
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+.place-card:hover {
+  scale: 1.1;
+}
+
 .place-card img {
   width: 100%;
   border-radius: 10px;
@@ -393,9 +403,10 @@ select {
   font-weight: 800;
 }
 .place-card-info h5 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin: 1.5rem 0 2rem;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0 2rem;
   color: var(--content-color);
 }
 .place-card-info button {
@@ -619,8 +630,8 @@ footer {
     padding: 2rem;
   }
 
-  input,
-  select {
+  .banner-info-filed input,
+  .banner-info-filed select {
     width: 100%;
   }
 
@@ -642,9 +653,13 @@ footer {
     width: 15%;
   }
 
+  .place-card:hover {
+    scale: 1.1;
+    box-shadow: none;
+  }
+
   .places-cards {
     grid-template-columns: repeat(1, 1fr);
-    /* margin-top: 2.5rem; */
   }
 
   .newsletter-sale h2 {
