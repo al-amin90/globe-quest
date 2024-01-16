@@ -190,7 +190,8 @@ select {
 
 /* your Destination style is here  */
 .destination-info p,
-.why-choose-us p {
+.why-choose-us p,
+.deals-discounts p {
   text-align: center;
   max-width: 65rem;
   margin: 0 auto;
@@ -413,6 +414,73 @@ select {
   margin-top: 1.5rem;
 }
 
+/* deals-discounts style is here  */
+.deal-dis-1,
+.deal-dis-2 {
+  height: 47rem;
+  width: 100%;
+  background-image: url(../Images/Group\ 40.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.deal-dis-info {
+  position: absolute;
+  bottom: 12%;
+  right: 6%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4.2rem 5rem 4.2rem 4.2rem;
+  width: 50%;
+}
+
+#deal-dis-info2 {
+  bottom: 12%;
+  left: 6%;
+}
+
+.deal-heading {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fa-clock,
+.fa-people-group,
+.fa-location-dot {
+  font-size: 1.8rem;
+  color: rgba(255, 84, 0, 1);
+  margin-right: 0.8rem;
+}
+
+.icon-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon-info p {
+  color: #5a5a5d;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.deal-dis-info p {
+  padding: 1rem 0;
+  max-width: 38rem;
+}
+.deal-dis-info h4 {
+  color: #ff5400;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 1rem 0 2rem;
+}
+
 /* place to get lost style is here  */
 .place-to-get-lost {
   color: #131318;
@@ -596,12 +664,28 @@ footer {
     margin-top: 2.5rem;
   }
 
+  .deal-dis-1,
+  .deal-dis-2 {
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+  }
+
+  .deal-dis-info {
+    width: 88%;
+    bottom: 10%;
+  }
+
   .side-arrow {
     display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .banner-info-filed input,
+  .banner-info-filed select {
+    width: 12rem;
+  }
   .card-col-1 {
     flex-direction: column;
   }
@@ -675,6 +759,17 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .deal-dis-info,
+  #deal-dis-info2 {
+    width: 88%;
+    bottom: 6%;
+  }
+
+  .deal-dis-1,
+  .deal-dis-2 {
+    height: 60rem;
+  }
+
   .newsletter-sale h2 {
     font-size: 2rem;
   }
@@ -687,6 +782,11 @@ footer {
 @media screen and (max-width: 430px) {
   .common-heading {
     font-size: 2.7rem;
+  }
+
+  .deal-dis-info,
+  #deal-dis-info2 {
+    bottom: 4%;
   }
 
   .newsletter-sale {
